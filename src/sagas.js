@@ -1,5 +1,5 @@
-import { call, put, takeEvery, takeLatest } from 'redux-saga/effects'
-import { REQUEST_HELLO_WORLD, RECEIVE_HELLO_WORLD, receiveHelloWorld } from './actions';
+import { put, takeLatest } from 'redux-saga/effects'
+import { REQUEST_HELLO_WORLD, receiveHelloWorld } from './actions';
 
 // worker Saga: will be fired on USER_FETCH_REQUESTED actions
 function* helloWorld(action) {
